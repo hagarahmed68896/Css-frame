@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main main right'
+    'footer footer footer footer footer footer';
+  gap: 5px;
+  padding: 10px;
+}
+.item1,.item5{
+   
+    background-color: blueviolet;
+}
+.item2 , .item4{
+    height: 430px;
+    background-color: brown;
+
+}
+.item3{
+    background-color: blanchedalmond;
+}
+
+.grid-container > div {
+  text-align: center;
+  justify-content: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+@media (max-width: 766px) {
+    body{
+        background-color: rgb(101, 73, 128);
+    }
+    .grid-container{
+        grid-template-areas:
+    'header'
+    'menu '
+    'main'
+    'right '
+    'footer';
+    }
+    .item2 , .item4{
+    height: 120px;
+    background-color: brown;
+
+}
+}
+
+</style>
+</head>
+<body>
+<div class="grid-container">
+  <div class="item1">Header</div>
+  <div class="item2">SIDENAV</div>
+  <div class="item3">Main content</div>  
+  <div class="item4">SideBar</div>
+  <div class="item5">Footer</div>
+</div>
+
+</body>
+</html>
+
+

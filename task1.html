@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+  
+    .nav{
+      background-color: rgb(213, 216, 218);
+      display: flex;
+        padding: 10px;
+       flex-wrap: wrap;
+      justify-content: space-between;
+      margin: 5px;
+    }
+
+  
+    .main{
+        border: 3px solid black;
+        text-align: center;
+        margin: 10px;
+        padding-top: 10px;  
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .Main{
+        display: flex;
+    }
+    @media (max-width: 766px) {
+        .nav{
+            display: block;
+        }
+        .nav>div{
+            margin-bottom: 5px;
+            border-bottom: 3px solid white;
+        }
+        .Main{
+            display: block;
+
+        }
+        .main{
+            width: 100%;
+            margin: 0;
+          
+        }
+    }
+    .fo{
+        background-color: rgb(213, 216, 218);
+        text-align: center;
+        margin-top: 5px ;
+        width: 100%;
+    }
+
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="nav">    
+    <div class="col1">Home</div>
+    <div class="col2">About</div>
+    <div class="col3">Services</div>
+    <div class="col4">Contact</div>
+    </div>
+    <div class="Main">
+    <div class="main">This is a flex item
+
+        <div class="fo">Footer</div>
+    </div>
+    <div class="main">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, autem? Quaerat delectus libero repellat sint rerum quisquam suscipit vero distinctio ipsam optio. Accusantium laborum saepe omnis molestiae porro sit minus.
+        <div class="fo">Footer</div> 
+</div>
+</div>
+    </div>
+</div>
+</body>
+</html>

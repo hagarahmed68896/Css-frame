@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    body{
+      display: flex;
+        background-color: aquamarine;
+        justify-content: center;
+    }
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+    align-self: center;
+    margin-top: 7%;
+    width: 40%;
+  display: grid;
+  grid-template-areas:
+    'header menu menu'
+    'header main right'
+    'footer footer right';
+    transform: rotate(45deg);
+  gap: 5px;
+  padding: 10px;
+align-items: center;}
+.item1, .item4
+{
+  height: 250px;
+}
+.item3{
+  height: 100px;
+}
+.item5, .item2{
+ height: 100px;
+}
+
+.grid-container > div {
+  text-align: center;
+  justify-content: center;
+  padding: 20px 0;
+  font-size: 30px;
+  background-color: blueviolet;
+}
+@media (max-width: 766px) {
+    body{
+        background-color: rgb(101, 73, 128);
+    }
+}
+
+</style>
+</head>
+<body>
+<div class="grid-container">
+  <div class="item1">1</div>
+  <div class="item2">2</div>
+  <div class="item3">3</div>  
+  <div class="item4">4</div>
+  <div class="item5">5</div>
+</div>
+
+</body>
+</html>
+
+
